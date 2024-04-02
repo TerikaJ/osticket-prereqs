@@ -19,7 +19,7 @@ This demonstration outlines the prerequisites and installation of the open-sourc
 
 <h2>List of Prerequisites</h2>
 
-- Microsoft Azure basic fundamentals (<a href="https://github.com/terikaj/azure-start">Demo</a>)
+- Microsoft Azure basic fundamentals (<a href="https://github.com/terikaj/azure-begin">Demo</a>)
 - Azure Virtual Machine running Windows OS
 - Installation Files within VM (<a href="https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Download All</a>):
   - <a href="https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view">PHP Manager for IIS v1.5.0</a>
