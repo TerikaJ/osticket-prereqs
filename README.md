@@ -38,7 +38,7 @@ This demonstration outlines the prerequisites and installation of the open-sourc
   - _This example uses Virtual Machine named `osTicket-VM`, with username `ostuser`, Size `4 vCPUs`_
 - Connect to that VM using Remote Desktop Connection (RDP).
 
-_If you don't know how to complete this prerequisite, refer to <a href="https://github.com/JTYKolesar/azure-start#-create-a-virtual-machine">THIS PAGE</a>_
+_If you don't know how to complete this prerequisite, refer to <a href="https://github.com/terikaj/azure-start#-create-a-virtual-machine">THIS PAGE</a>_
 <hr>
 
 <h3>&#9313; Enabling Windows Features in the Virtual Machine</h3>
@@ -302,7 +302,7 @@ End User Ticket Page: <a href="http://localhost/osTicket/">http://localhost/osTi
 </p>
 <hr>
 
-<h1><p align=center>DONE! Good Job!</p></h1>
+<h1><p align=center> DONE! Good Job! </p></h1>
 
 <h2><p align=center>Next Demonstration:<br><a href="https://github.com/terikaj/post-install-config">Post-Install Configuration</a></p></h2>
 
