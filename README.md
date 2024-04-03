@@ -304,7 +304,7 @@ End User Ticket Page: <a href="http://localhost/osTicket/">http://localhost/osTi
 
 <h1><p align=center> DONE! Good Job! </p></h1>
 
-<h2><p align=center>The Next Demonstration:<br><a href="https://github.com/terikaj/post-installation-configuration">Post-Installation Configuration</a></p></h2>
+<h2><p align=center>The Next Demonstration:<br><a href="https://github.com/terikaj/post-install-config">Post-Installation Configuration</a></p></h2>
 
 <p align=right>Please delete & clean up your Azure resources when finished!<br>
 If you're unsure of how to do this, please click <a href="https://github.com/terikaj/azure-begin">HERE</a>
