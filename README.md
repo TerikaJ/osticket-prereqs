@@ -34,11 +34,11 @@ This demonstration outlines the prerequisites and installation of the open-sourc
 <h3>&#9312; Creating and Connecting to a Virtual Machine in Azure</h3>
 
 - Create a "Resource Group".
-- Create a "Virtual Machine" running Windows OS with an adequate Size.
+- Create a "Virtual Machine" running Windows OS with adequate hardware to sustain computational operations.
   - _This example uses Virtual Machine named `osTicket-VM`, with username `ostuser`, Size `4 vCPUs`_
-- Connect to that VM using Remote Desktop Connection (RDP).
+- Connect to the Virtual Machine using Microsoft's Remote Desktop Connection (RDP).
 
-_If you don't know how to complete this prerequisite, refer to <a href="https://github.com/terikaj/azure-begin?tab=readme-ov-file#-connect-to-the-virtual-machine-via-remote-desktop">THIS PAGE</a>_
+_If you're unsure of how to do this, please click the prerequisite link, refer to <a href="https://github.com/terikaj/azure-begin?tab=readme-ov-file#-connect-to-the-virtual-machine-via-remote-desktop">THIS PAGE</a>_
 <hr>
 
 <h3>&#9313; Enabling Windows Features in the Virtual Machine</h3>
