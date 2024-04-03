@@ -306,5 +306,6 @@ End User Ticket Page: <a href="http://localhost/osTicket/">http://localhost/osTi
 
 <h2><p align=center>Next Demonstration:<br><a href="https://github.com/terikaj/post-install-config">Post-Install Configuration</a></p></h2>
 
-<p align=right>DELETE **EVERYTHING!** IN AZURE TO SAVE CREDITS!<br>
-If you don't know how to, click <a href="https://github.com/terikaj/azure-start/blob/main/README.md#bonus-delete-all-resources-in-azure">HERE</a>
+<p align=right>Please delete & clean up your Azure resources when finished!<br>
+If you're unsure of how to do this, please click <a href="https://github.com/terikaj/azure-start/blob/main/README.md#bonus-delete-all-resources-in-azure">HERE</a>
+
