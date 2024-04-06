@@ -73,7 +73,7 @@ _This should take you to the "Internet Information Services" page, which confirm
 
 <h3>&#9314; Installing osTicket: Support Ticketing System</h3>
 
-_Now we need to install the prerequisite files onto the virtual machine to allow osTicket to run correctly._ </br>
+_Now we must install the prerequisite files onto the virtual machine to allow osTicket to run correctly._ </br>
 _You can download all necessary files <a href="https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">HERE</a>_, or download them individually while following this demo.</br>
 _(Download within the Virtual Machine by copying the link to Microsoft Edge or Google Chrome!)</br>_
 _You can right-click the .zip file, click "Extract All...", then "Extract"._
@@ -100,7 +100,7 @@ _Next we'll have to create a directory for the following installation:_
 - Rename the folder to "PHP".
   - _Right-click the new folder and select "Rename", or softly double-click it to allow renaming_
 <p align="center">
-<img src="https://i.imgur.com/5yEsn7Z.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="874" alt="Screen Shot 2024-04-05 at 1 35 46 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/9cd37bec-a7e1-41bb-b5a8-25bb5f25a351">
 </p>
 
 - Download <a href="https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view">php-7.3.8-nts-Win32-VC15-x86.zip</a> (PHP)
@@ -108,15 +108,16 @@ _Next we'll have to create a directory for the following installation:_
 - Right-click on the .zip file > click "Extract All..." > "Browse" > Find and select the PHP folder in C:\ > "Extract".
   - _Or you can simply type it in the box if you already know the path name._
 <p align="center">
-<img src="https://i.imgur.com/ZfLqf3M.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/6SEcPHm.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="804" alt="Screen Shot 2024-04-05 at 1 42 47 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/dc09cae4-9fbc-4283-8c47-88197f2c799a">
+<img width="961" alt="Screen Shot 2024-04-05 at 1 44 52 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/370325f4-68e8-4aa0-8c77-3de69bb66bbd">
+<img width="326" alt="Screen Shot 2024-04-05 at 1 50 06 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/d802237a-eeee-487e-ae8c-60553148e2be">
 </p>
 
 - Install <a href="https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view">VC_redist.x86.exe</a> (Microsoft Visual C++ Redistributable).
 - Agree to the License Terms and Conditions, the click "Install".
 - Once completed, click "Close".
 <p align="center">
-<img src="https://i.imgur.com/M6bnRpe.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="493" alt="Screen Shot 2024-04-05 at 1 51 15 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/35753212-5493-47d4-adc6-0dbf47314bea">
 </p>
 
 - Next, install <a href="https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view">mysql-5.5.62-win32.msi</a> (MySQL v5.5.62).
@@ -124,7 +125,10 @@ _Next we'll have to create a directory for the following installation:_
 - Click "Typical".
 - Once that's complete, click "Finish".
 <p align="center">
-<img src="https://i.imgur.com/KE9Nf9j.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="507" alt="Screen Shot 2024-04-05 at 1 53 10 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/ec35376f-fbe5-4dbf-9b94-59a68da4ecfe">
+<img width="509" alt="Screen Shot 2024-04-05 at 1 54 18 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/4c8d9d1f-f346-4167-a02c-a33c6658766a">
+<img width="502" alt="Screen Shot 2024-04-05 at 1 55 32 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/4b8c7aaa-65b7-4538-9568-9ce1a66d7087">
+<img width="507" alt="Screen Shot 2024-04-05 at 1 56 40 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/bd08cb62-6512-4a05-8176-323f7783ee3c">
 </p>
 
 - Another window prompt will appear, just click "Next".
@@ -133,9 +137,11 @@ _Next we'll have to create a directory for the following installation:_
 - Click "Execute" to start the configuration process.
 - Once completed, click "Finish".
 <p align="center">
-<img src="https://i.imgur.com/J6sJ3D5.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/TYXyZre.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/NeKMEJo.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img width="511" alt="Screen Shot 2024-04-05 at 1 58 07 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/9d360d76-84b8-4afb-83c6-be3973423f33">
+<img width="512" alt="Screen Shot 2024-04-05 at 1 59 26 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/1223e30b-e075-41d7-b732-0c86407e8bd6">
+<img width="513" alt="Screen Shot 2024-04-05 at 2 01 34 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/d1a1c5bb-97ee-4242-bb0e-2d9b5a973065">
+<img width="515" alt="Screen Shot 2024-04-05 at 2 02 51 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/ffe87161-682c-48a2-9353-0da191dea78b">
+<img width="517" alt="Screen Shot 2024-04-05 at 2 03 37 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/8e4cabfe-7e20-4062-86e1-1fbe3448d782">
 </p>
 <hr>
 
