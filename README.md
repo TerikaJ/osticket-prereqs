@@ -189,37 +189,37 @@ _Now we're ready to install osTicket!_
 <img width="1103" alt="Screen Shot 2024-04-05 at 2 36 49 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/3da86a12-4526-4920-8dfc-a2f3089f537c">
 </p>
 
-_Note that some of the recommended extensions are not enabled, so this will need to be addressed:_
-- Return to IIS, still under osTicket folder on the left sidebar, double-click "PHP Manager".
+_Note that some of the recommended extensions are not enabled, so we will address this:_
+- Return to IIS, located under osTicket folder on the left sidebar, double-click "PHP Manager".
 - Under PHP Extensions, click "Enable or disable an extension".
 <p align="center">
 <img width="1158" alt="Screen Shot 2024-04-05 at 2 39 48 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/39ab1177-2386-4ade-bfb2-7ecf9b63ebf3">
 <img width="938" alt="Screen Shot 2024-04-05 at 2 41 38 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/e73d7009-e3a3-4015-86f7-18d9fbf36607">
 </p>
 
-- Find the following below, then click "Enable" on the right sidebar:
+- Find the following listed below, then click "Enable" on the right sidebar:
   - php_imap.dll
   - php_intl.dll
   - php_opcache.dll
 - Refresh the osTicket webpage to observe the changes.
   - _APCu Extension & Zend OPcache Extension should be the only two with a Red X._
 <p align="center">
-<img src="https://i.imgur.com/lJLsKOa.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="950" alt="Screen Shot 2024-04-05 at 2 43 58 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/7a3f29f8-6480-4235-a5bc-f167024d1efc">
 </p>
 
 - Return to the wwwroot folder in File Explorer.
   - Navagate to **...wwwroot\osTicket\include**.
   - Find `ost-sampleconfig.php`, and Rename it to `ost-config.php` (essentially removing the word sample).
 <p align="center">
-<img src="https://i.imgur.com/N3FLLaY.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="934" alt="Screen Shot 2024-04-05 at 2 47 53 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/ffa7a2a5-ae3f-4691-aa65-d4cc898d868d">
 </p>
 
 _For demonstration purposes, we are going to temporarily give every user the permissions to access the `ost-config.php` file._
 - Right-click the file and select "Properties".
 - Click the "Security" tab at the top, then click "Advanced" at the bottom for special permissions.
 <p align="center">
-<img src="https://i.imgur.com/iPPcbIV.jpg" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/V1EmJ2w.jpg" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img width="418" alt="Screen Shot 2024-04-05 at 2 49 37 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/ce391c6b-00c4-4f09-b3e9-296d0b3c57d6">
+<img width="523" alt="Screen Shot 2024-04-05 at 2 50 58 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/02ce8e2f-d935-4ed3-af3c-7977f20d4093">
 </p>
 
 - Next, click "Disable inheritance".
@@ -227,7 +227,7 @@ _For demonstration purposes, we are going to temporarily give every user the per
   - _The middle box should no longer have any principals, so we'll need to add one that includes everyone._
 - Click "Add".
 <p align="center">
-<img src="https://i.imgur.com/8RaZ9Sn.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="868" alt="Screen Shot 2024-04-05 at 2 54 20 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/3b1e9d33-eb58-4df1-9123-899b16e6f65a">
 </p>
 
 - At the top, click "Select a principal".
@@ -235,7 +235,7 @@ _For demonstration purposes, we are going to temporarily give every user the per
 - Press "OK", then click the checkmark to enable "Full Control".
 - Press "OK" until all properties windows are closed.
 <p align="center">
-<img src="https://i.imgur.com/8WWGxGN.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="943" alt="Screen Shot 2024-04-05 at 2 57 20 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/5a95ab66-f660-431f-a31c-fdbf94936f32">
 </p>
 
 _Now we can continue setting up the osTicket installation._
@@ -243,21 +243,23 @@ _Now we can continue setting up the osTicket installation._
   - Accept the agreement, then keep clicking "Next", then "Install".
   - Once done, click Finish to launch the program.
 <p align="center">
-<img src="https://i.imgur.com/8Ya2O7l.jpg" height="150%" width="150%" alt="Disk Sanitization Steps"/>
+<img width="612" alt="Screen Shot 2024-04-05 at 3 01 26 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/f2680b1d-45ef-4e3d-9d62-1bae03726806">
+<img width="616" alt="Screen Shot 2024-04-05 at 3 02 41 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/f5bb212b-4459-42bc-95f2-7f7f6efb0602">
+<img width="613" alt="Screen Shot 2024-04-05 at 3 03 39 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/3c7c5247-c177-4ee1-aea5-e87c1754305d">
 </p>
 
 - In HeidiSQL, click "New" at the bottom left.
 - Enter the username **"root"**, and the password you created when installing MySQL.
 - Click "Open".
 <p align="center">
-<img src="https://i.imgur.com/MRTC33j.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="705" alt="Screen Shot 2024-04-05 at 3 05 02 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/1b2132af-a375-447b-a2b1-9a432c797f9b">
 </p>
 
 - Right-click "Unnamed" on the left sidebar.
   - Select "Created new" > "Database".
 - Type in the name "osTicket", then click "OK".
 <p align="center">
-<img src="https://i.imgur.com/ULeJErY.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="965" alt="Screen Shot 2024-04-05 at 3 10 07 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/fecb6cca-8595-4758-bea8-dda3a0e7412f">
 </p>
 
 - Return the osTicket Installation webpage, click "Continue".
@@ -278,7 +280,7 @@ _Now we can continue setting up the osTicket installation._
   - _You should then be sent to a Congratulations! page, if no errors._
 <p align="center">
 <img src="https://i.imgur.com/1GQbv9n.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/sfmeeK5.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="1075" alt="Screen Shot 2024-04-05 at 3 15 19 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/be6415cd-93b0-47a3-a6cf-c879123321fa">
 </p>
 <hr>
 
@@ -287,7 +289,7 @@ _Now we can continue setting up the osTicket installation._
 - Return to File Explorer and navigate to "C:\inetpub\wwwroot\osTicket\".
 - Find and Delete the `setup` folder.
 <p align="center">
-<img src="https://i.imgur.com/6oY0tWK.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="854" alt="Screen Shot 2024-04-05 at 3 18 14 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/0cb5eef2-14d5-43f4-b025-2989cce9edd3">
 </p>
 
 _Now we need to reset the permissions of the `ost-config.php` file to read-only to prevent any accidental edits._
@@ -298,8 +300,8 @@ _Now we need to reset the permissions of the `ost-config.php` file to read-only 
   - Uncheck "Full Control", "Modify", and "Write".
   - Press "OK", "Apply", then "OK" to close the window.
 <p align="center">
-<img src="https://i.imgur.com/BIdXCox.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/bQsRfR0.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img width="912" alt="Screen Shot 2024-04-05 at 3 24 47 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/613eead5-c5e5-4d41-9ac2-2ad14796aa1b">
+<img width="758" alt="Screen Shot 2024-04-05 at 3 26 26 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/1962b812-f705-4842-89b3-cf57b7038050">
 </p>
 <hr>
 
@@ -309,7 +311,7 @@ End User Ticket Page: <a href="http://localhost/osTicket/">http://localhost/osTi
 
 - Copy the URLs and open them in Microsoft Edge.
 <p align="center">
-<img src="https://i.imgur.com/mQYjqoF.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="1695" alt="Screen Shot 2024-04-05 at 3 32 56 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/45c5f541-6fff-4a86-99e6-e0a3cfc5f96d">
 </p>
 <hr>
 
