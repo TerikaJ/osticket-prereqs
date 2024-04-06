@@ -163,21 +163,21 @@ _Next we'll have to create a directory for the following installation:_
 
 <h3>&#9316; Installing osTicket: Support Ticketing System</h3>
 
-_Now we are ready to install osTicket!_
+_Now we're ready to install osTicket!_
 - Download <a href="https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">osTicket-v1.15.8.zip</a> (osTicket).
   - Open the .zip file (no need to extract all).
 - Open another File Explorer window and navigate to **C:\inetpub\wwwroot**.
 - Click and Drag the `upload` folder in the .zip file into wwwroot folder (this will automatically extract that specific folder).
 - Rename `upload` to `osTicket`.
 <p align="center">
-<img src="https://i.imgur.com/caVUV5a.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="1530" alt="Screen Shot 2024-04-05 at 2 28 17 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/8ce5eb6a-fb03-4c74-8669-d8e6001a13d7">
 </p>
 
 - Return to IIS.
   - On the left sidebar, click "osTicket-VM".
   - Then, on the right sidebar, click "Restart".
 <p align="center">
-<img src="https://i.imgur.com/RjawCDK.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="1171" alt="Screen Shot 2024-04-05 at 2 31 00 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/96c6a591-7b35-4fad-a128-73a5e63832f2">
 </p>
 
 - On the left sidebar, click the dropdown arrow beside "Sites", same thing with "Default Web Site", then click "osTicket.
@@ -185,16 +185,16 @@ _Now we are ready to install osTicket!_
 - On the right sidebar, click "Browse *:80 (http)".
   - This will open a new tab on Microsoft Edge to the osTicket Installer page.
 <p align="center">
-<img src="https://i.imgur.com/xnYfiBb.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/Iyh6UO2.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img width="1171" alt="Screen Shot 2024-04-05 at 2 34 29 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/5dbffd07-db37-4bc5-81df-2180f71dc93b">
+<img width="1103" alt="Screen Shot 2024-04-05 at 2 36 49 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/3da86a12-4526-4920-8dfc-a2f3089f537c">
 </p>
 
 _Note that some of the recommended extensions are not enabled, so this will need to be addressed:_
 - Return to IIS, still under osTicket folder on the left sidebar, double-click "PHP Manager".
 - Under PHP Extensions, click "Enable or disable an extension".
 <p align="center">
-<img src="https://i.imgur.com/rJNHqxf.jpg" height="30%" width="30%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/ao3rSMH.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img width="1158" alt="Screen Shot 2024-04-05 at 2 39 48 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/39ab1177-2386-4ade-bfb2-7ecf9b63ebf3">
+<img width="938" alt="Screen Shot 2024-04-05 at 2 41 38 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/e73d7009-e3a3-4015-86f7-18d9fbf36607">
 </p>
 
 - Find the following below, then click "Enable" on the right sidebar:
