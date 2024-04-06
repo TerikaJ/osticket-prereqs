@@ -104,7 +104,7 @@ _Next we'll have to create a directory for the following installation:_
 </p>
 
 - Download <a href="https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view">php-7.3.8-nts-Win32-VC15-x86.zip</a> (PHP)
-  - _You'll notice that the file is contained in a .zip file, so we'll have to extract the contents from it before using._
+  - _You'll notice the file is contained in a .zip file. We'll have to extract the contents from it before using._
 - Right-click on the .zip file > click "Extract All..." > "Browse" > Find and select the PHP folder in C:\ > "Extract".
   - _Or you can simply type it in the box if you already know the path name._
 <p align="center">
@@ -114,7 +114,7 @@ _Next we'll have to create a directory for the following installation:_
 </p>
 
 - Install <a href="https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view">VC_redist.x86.exe</a> (Microsoft Visual C++ Redistributable).
-- Agree to the License Terms and Conditions, the click "Install".
+- Agree to the License Terms and Conditions, then click "Install".
 - Once completed, click "Close".
 <p align="center">
 <img width="493" alt="Screen Shot 2024-04-05 at 1 51 15 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/35753212-5493-47d4-adc6-0dbf47314bea">
@@ -123,7 +123,7 @@ _Next we'll have to create a directory for the following installation:_
 - Next, install <a href="https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view">mysql-5.5.62-win32.msi</a> (MySQL v5.5.62).
 - Agree to the License Agreement, then click "Next".
 - Click "Typical".
-- Once that's complete, click "Finish".
+- Next click "Finish".
 <p align="center">
 <img width="507" alt="Screen Shot 2024-04-05 at 1 53 10 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/ec35376f-fbe5-4dbf-9b94-59a68da4ecfe">
 <img width="509" alt="Screen Shot 2024-04-05 at 1 54 18 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/4c8d9d1f-f346-4167-a02c-a33c6658766a">
@@ -131,9 +131,9 @@ _Next we'll have to create a directory for the following installation:_
 <img width="507" alt="Screen Shot 2024-04-05 at 1 56 40 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/bd08cb62-6512-4a05-8176-323f7783ee3c">
 </p>
 
-- Another window prompt will appear, just click "Next".
-- Click "Standard Configuration", then "Next" twice (leaving everything by default).
-- Create a password of your choice for the root login, then click "Next".
+- Another window prompt will appear, click "Next".
+- Click "Standard Configuration", then "Next" twice (leaving everything as default).
+- Create a password of your choice for the root login, click "Next".
 - Click "Execute" to start the configuration process.
 - Once completed, click "Finish".
 <p align="center">
@@ -147,15 +147,17 @@ _Next we'll have to create a directory for the following installation:_
 
 <h3>&#9315; Register PHP within IIS</h3>
 
-- Press the Windows Key/Button and search for "Internet Information Services (IIS) Manager", then "Run as Administrator".
+- Press the Windows Key/Button to search for "Internet Information Services (IIS) Manager", then "Run as Administrator".
 - Double-click "PHP Manager".
 - Under PHP Setup, click on "Register new PHP version".
-- Click on the 3-dots "..." to browse for `php-cgi.exe`, located inside the PHP folder on the C:\ drive.
+- Click the 3-dots to the right of the window"..." to browse for `php-cgi.exe`, located inside the PHP folder on the C:\ drive.
 - Once you find it, click "Open" (or double-click the file), then "OK".
 <p align="center">
-<img src="https://i.imgur.com/ZUbY9fi.jpg" height="20%" width="20%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/5vkhmRw.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/cvrfkk5.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img width="566" alt="Screen Shot 2024-04-05 at 2 07 54 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/a4bdb66e-9e41-4111-9278-19b552fe4ed1">
+<img width="1174" alt="Screen Shot 2024-04-05 at 2 11 13 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/e8c27128-7ae5-48b9-8a7b-0e44ce7c1555">
+<img width="1173" alt="Screen Shot 2024-04-05 at 2 12 54 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/25f2833a-1782-4390-8cb9-89f4810c79e1">
+<img width="777" alt="Screen Shot 2024-04-05 at 2 15 53 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/955c4e80-27d7-4b2c-9269-636badf67220">
+<img width="520" alt="Screen Shot 2024-04-05 at 2 20 39 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/192eac87-944a-4335-9dd6-44a5bc6439ed">
 </p>
 <hr>
 
