@@ -3,12 +3,12 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This demonstration outlines the prerequisites and installation of the open-source help desk ticketing system "osTicket" within a created virtual machine using Microsoft Azure.<br />
+This demonstration outlines the prerequisites and installation of the open-source help desk ticketing system "osTicket" within a Microsoft Azure virtual machine.<br />
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Microsoft Azure (Virtual Machine)
+- Microsoft Remote Desktop
 - Internet Information Services (IIS)
 - MySQL / Heidi SQL
 - osTicket: Support Ticketing System
@@ -16,6 +16,7 @@ This demonstration outlines the prerequisites and installation of the open-sourc
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
+- MacOS
 
 <h2>List of Prerequisites</h2>
 
@@ -31,22 +32,23 @@ This demonstration outlines the prerequisites and installation of the open-sourc
 
 <h2>Installation Steps</h2>
 
-<h3>&#9312; Creating and Connecting to a Virtual Machine in Azure</h3>
+<h3>&#9312; Creating and Connecting to a Microsoft Azure Virtual Machine</h3>
 
 - Create a "Resource Group".
-- Create a "Virtual Machine" running Windows OS with adequate hardware to sustain computational operations.
-  - _This example uses Virtual Machine named `osTicket-VM`, with username `ostuser`, Size `4 vCPUs`_
+- Create a "Virtual Machine" running Windows 10 OS with adequate hardware to sustain computational operations.
+  - _This example uses a Virtual Machine named `osTicket-VM`, with the username `ostuser`, Size `4 vCPUs`_
 - Connect to the Virtual Machine using Microsoft's Remote Desktop Connection (RDP).
 
 _If you're unsure of how to do this, please click the prerequisite link, refer to <a href="https://github.com/terikaj/azure-begin?tab=readme-ov-file#-connect-to-the-virtual-machine-via-remote-desktop">THIS PAGE</a>_
 <hr>
 
-<h3>&#9313; Enabling Windows Features in the Virtual Machine</h3>
+<h3>&#9313; Enabling Windows Features inside of the Virtual Machine</h3>
 
-- Before installing any file, on the virtual machine:
-  - Press the Windows Key/Button, then search for "Turn Windows Features on or off /Control Panel".
+- Before installing any file on the virtual machine:
+  - Click the Windows Key/Button, then search for "Turn Windows Features on or off /Control Panel".
 <p align="center">
-<img src="https://i.imgur.com/8NCudlF.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img width="500" alt="Screen Shot 2024-04-05 at 1 14 13 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/3c409211-0510-4b78-9bab-208adeeb47e8">
+<img width="350" alt="Screen Shot 2024-04-05 at 1 16 21 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/4e2033e1-2e09-4bfa-bdb2-7c946378d61d">
 </p>
 
 - Find "Internet Information Services", then click the checkbox ☐ to enable it (should now have a small black box in the middle, NOT a checkmark).
@@ -55,7 +57,7 @@ _If you're unsure of how to do this, please click the prerequisite link, refer t
 - Expand "Common HTTP Features", then checkmark ALL boxes.
 - Click "OK" to apply changes.
 <p align="center">
-<img src="https://i.imgur.com/vTX7c7x.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img width="350" alt="Screen Shot 2024-04-05 at 1 19 02 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/6ab04000-f5c7-4e1a-a4d4-64ea07136ceb">
 <img src="https://i.imgur.com/FYHztm2.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
@@ -65,37 +67,38 @@ _With those changes applied, we'll need to confirm if they are working._
 
 _This should take you to the "Internet Information Services" page, which confirms the features are working._
 <p align="center">
-<img src="https://i.imgur.com/uzusaWg.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="450" alt="Screen Shot 2024-04-05 at 1 22 20 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/985d0c40-a261-4a40-a41a-6ec52f383702">
 </p>
 <hr>
 
 <h3>&#9314; Installing osTicket: Support Ticketing System</h3>
 
-_We'll now need to install the prerequisites files onto the virtual machine in order for osTicket to run correctly._ </br>
-_You can download all of the necessary files <a href="https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">HERE</a>_, or download them individually while following this demo.</br>
-_(Download from the Virtual Machine!)</br>_
+_Now we need to install the prerequisite files onto the virtual machine to allow osTicket to run correctly._ </br>
+_You can download all necessary files <a href="https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">HERE</a>_, or download them individually while following this demo.</br>
+_(Download within the Virtual Machine by copying the link to Microsoft Edge or Google Chrome!)</br>_
 _You can right-click the .zip file, click "Extract All...", then "Extract"._
 <p align="center">
-<img src="https://i.imgur.com/z2pjEZI.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1268" alt="Screen Shot 2024-04-05 at 1 29 52 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/d57cdd17-1316-4155-afcc-7fa7193af6ff">
 </p>
 
 - On the virtual machine, first install <a href="https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view">PHPManagerForIIS_V1.5.0.msi</a> (PHP Manager for IIS).
 - When the installation prompt appears, click "Next" > Select "I Agree" and "Next" > After installation, "Close".
 <p align="center">
-<img src="https://i.imgur.com/nUge8wP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="509" alt="Screen Shot 2024-04-05 at 1 31 40 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/7a1f81c3-6dee-43e5-a5fd-f313eb54ead2">
+<img width="512" alt="Screen Shot 2024-04-05 at 1 32 43 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/40723fd0-8a75-44ae-8ec3-c0e0f4b2dc12">
 </p>
 
 - Next, install <a href="https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view">rewrite_amd64_en-US.msi</a> (Rewrite Module)
 - When the installation prompt appears, click the checkbox to Agree the terms > click "Install" > After installation, "Finish".
 <p align="center">
-<img src="https://i.imgur.com/xrSD9NW.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="506" alt="Screen Shot 2024-04-05 at 1 33 45 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/176355b7-a4da-4750-8d17-e692d38e5b29">
 </p>
 
-_We're going to have to create a directory for the next installation:_
+_Next we'll have to create a directory for the following installation:_
 - Open the `C:\` drive in "Windows Explorer".
 - Right-click on an empty space and select to "New" > "Folder" to create a blank folder.
 - Rename the folder to "PHP".
-  - _You can right-click the new folder and select "Rename", or slowly double-click it to allow renaming_
+  - _Right-click the new folder and select "Rename", or softly double-click it to allow renaming_
 <p align="center">
 <img src="https://i.imgur.com/5yEsn7Z.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
