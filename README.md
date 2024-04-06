@@ -224,24 +224,24 @@ _For demonstration purposes, we are going to temporarily give every user the per
 
 - Next, click "Disable inheritance".
 - When the prompt appears, click "Remove all inherited permissions from this object".
-  - _The middle box should no longer have any principals, so we'll need to add one that includes everyone._
+  - _The middle box should no longer have any principals. We'll need to add one that includes everyone._
 - Click "Add".
 <p align="center">
 <img width="868" alt="Screen Shot 2024-04-05 at 2 54 20 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/3b1e9d33-eb58-4df1-9123-899b16e6f65a">
 </p>
 
 - At the top, click "Select a principal".
-- In the object name box, type in "everyone", then click "Check Names" (it should automatically assign it to **Everyone**).
+- In the object name box, type in "everyone", then click "Check Names" (it automatically assigns it to **Everyone**).
 - Press "OK", then click the checkmark to enable "Full Control".
-- Press "OK" until all properties windows are closed.
+- Press "OK" until all "properties" windows are closed.
 <p align="center">
 <img width="943" alt="Screen Shot 2024-04-05 at 2 57 20 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/5a95ab66-f660-431f-a31c-fdbf94936f32">
 </p>
 
-_Now we can continue setting up the osTicket installation._
+_Now we'll continue setting up osTicket's installation._
 - Install <a href="https://www.heidisql.com/installers/HeidiSQL_12.3.0.6589_Setup.exe">HeidiSQL v12.3.0.6589</a> (Heidi SQL).
-  - Accept the agreement, then keep clicking "Next", then "Install".
-  - Once done, click Finish to launch the program.
+  - Accept the agreement, keep clicking "Next", then "Install".
+  - Once done, click "Finish" to launch the program.
 <p align="center">
 <img width="612" alt="Screen Shot 2024-04-05 at 3 01 26 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/f2680b1d-45ef-4e3d-9d62-1bae03726806">
 <img width="616" alt="Screen Shot 2024-04-05 at 3 02 41 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/f5bb212b-4459-42bc-95f2-7f7f6efb0602">
@@ -277,7 +277,7 @@ _Now we can continue setting up the osTicket installation._
   - Enter MySQL Username (default is **root**).
   - Enter MySQL Password (Password you created when installing MySQL).
 - Once completed, click "Install Now".
-  - _You should then be sent to a Congratulations! page, if no errors._
+  - _You should receive a Congratulations! page, if no errors exist._
 <p align="center">
 <img src="https://i.imgur.com/1GQbv9n.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img width="1075" alt="Screen Shot 2024-04-05 at 3 15 19 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/be6415cd-93b0-47a3-a6cf-c879123321fa">
@@ -292,11 +292,11 @@ _Now we can continue setting up the osTicket installation._
 <img width="854" alt="Screen Shot 2024-04-05 at 3 18 14 PM" src="https://github.com/TerikaJ/osticket-prereqs/assets/136477450/0cb5eef2-14d5-43f4-b025-2989cce9edd3">
 </p>
 
-_Now we need to reset the permissions of the `ost-config.php` file to read-only to prevent any accidental edits._
+_Now we'll reset the permissions of the `ost-config.php` file to read-only in order to prevent any accidental edits._
 - Navigate to "C:\inetpub\wwwroot\osTicket\include".
   - Right-click on `ost-config.php` file, then select "Properties".
   - Select "Security" tab, click "Advanced".
-  - Select "Everyone" principal in the center box, then click "Edit".
+  - Select "Everyone" principal in the center box, click "Edit".
   - Uncheck "Full Control", "Modify", and "Write".
   - Press "OK", "Apply", then "OK" to close the window.
 <p align="center">
